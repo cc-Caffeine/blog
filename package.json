@@ -28,6 +28,7 @@
   "dependencies": {
     "@antv/infographic": "^0.2.4",
     "@astrojs/check": "^0.9.6",
+    "@astrojs/cloudflare": "^12.6.12",
     "@astrojs/react": "^4.4.2",
     "@astrojs/rss": "^4.0.14",
     "@floating-ui/react": "^0.27.16",
