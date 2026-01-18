@@ -11,14 +11,14 @@
 # Site Basic Information
 # =============================================================================
 site:
-  title: summersay's blog # 网站名称
-  alternate:  # 网站英文名称 用于页脚、Logo、@ handle 等
-  subtitle:  # 网站副标题
+  title: 夏沐雨小姐的blog # 网站名称
+  alternate: summersay # 网站英文名称 用于页脚、Logo、@ handle 等
+  subtitle: 岁月静好。 # 网站副标题
   name: summersay # 作者名称 - 请修改为你的名字
-  description:  # 网站描述
+  description:  这是我的个人网站！ # 网站描述
   avatar: /img/avatar.webp # 网站头像
-  showLogo: false # 是否显示 Logo
-  author: Author # 作者名称 - 请修改为你的名字
+  showLogo: true # 是否显示 Logo
+  author: summersay # 作者名称 - 请修改为你的名字
   url: https://formatiation.top # 站点 URL 用于 RSS 和 SEO
   startYear: 2026 # 建站年份
   keywords: # SEO 关键词
@@ -200,24 +200,6 @@ friends:
       desc: FE / ACG / 手工 / 深色模式强迫症 / INFP / 兴趣广泛养两只猫的老宅女 / remote
       image: https://blog.cosine.ren/img/avatar.webp
       color: '#ed788b'
-    - site: 示例博客 A
-      url: https://example-a.com
-      owner: Alice
-      desc: 一个热爱技术的开发者
-      image: https://api.dicebear.com/7.x/avataaars/svg?seed=Alice
-      color: '#BEDCFF'
-    - site: 示例博客 B
-      url: https://example-b.com
-      owner: Bob
-      desc: 分享生活与技术的小站
-      image: https://api.dicebear.com/7.x/avataaars/svg?seed=Bob
-      color: '#FBC1CC'
-    - site: 示例博客 C
-      url: https://example-c.com
-      owner: Carol
-      desc: 记录学习与成长的地方
-      image: https://api.dicebear.com/7.x/avataaars/svg?seed=Carol
-      color: '#ABDCFF'
 
 # =============================================================================
 # Announcements

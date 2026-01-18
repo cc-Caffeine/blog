@@ -17,6 +17,8 @@ import { rehypeImagePlaceholder } from './src/lib/markdown/rehype-image-placehol
 import { remarkLinkEmbed } from './src/lib/markdown/remark-link-embed.ts';
 import { normalizeUrl } from './src/lib/utils.ts';
 
+import cloudflare from '@astrojs/cloudflare';
+
 // Load YAML config directly with Node.js (before Vite plugins are available)
 // This is only used in astro.config.mjs - other files use @rollup/plugin-yaml
 function loadConfigForAstro() {
@@ -67,6 +69,7 @@ function conditionalSnowfall() {
 export default defineConfig({
   site: yamlConfig.site.url,
   compressHTML: true,
+
   markdown: {
     // Enable GitHub Flavored Markdown
     gfm: true,
@@ -106,6 +109,7 @@ export default defineConfig({
       },
     },
   },
+
   integrations: [
     react(),
     icon({
@@ -131,9 +135,11 @@ export default defineConfig({
       autoTheme: true,
     }),
   ],
+
   devToolbar: {
     enabled: true,
   },
+
   vite: {
     plugins: [
       yaml(),
@@ -152,5 +158,7 @@ export default defineConfig({
       include: ['@antv/infographic'],
     },
   },
+
   trailingSlash: 'ignore',
+  adapter: cloudflare()
 });
