@@ -401,7 +401,17 @@ navigation:
 #     turnstileKey: Cloudflare Turnstile Key (可选)
 #     locale: 自定义语言显示 (可选)
 comment:
-  provider: none  # 'remark42' | 'giscus' | 'waline' | 'none'
+  provider: giscus  # 'remark42' | 'giscus' | 'waline' | 'none'
+  giscus:
+    repo: cc-Caffeine/blog # GitHub 仓库名 (owner/repo 格式)
+    repoId: R_kgDOQ8J6uA # 仓库 ID (从 giscus.app 获取)
+    category: Announcements # Discussion 分类名称
+    categoryId: DIC_kwDOQ8J6uM4C1HGA # 分类 ID (从 giscus.app 获取)
+    mapping: pathname # 映射方式
+    reactionsEnabled: "1" # 启用 reactions ('1' 启用, '0' 禁用)
+    emitMetadata: "0" # 发送元数据
+    inputPosition: top # 输入框位置 ('top' | 'bottom')
+    lang: zh-CN # 语言
   # remark42:
   #   host: https://comment.example.com/
   #   siteId: your-site-id
